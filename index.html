@@ -76,24 +76,24 @@
 }
  
  .button1 {
-  background-color: SteelBlue; 
+  background-color: Navy; 
   color: black; 
-  border: 2px solid SteelBlue;
-}
-
-.button1:hover {
-  background-color: GoldenRod;
-  color: white;
-}
- 
-.button2 {
-  background-color: SteelBlue; 
-  color: black; 
-  border: 2px solid SteelBlue;
+  border: 2px solid Navy;
 }
 
 .button1:hover {
   background-color: black;
+  color: white;
+}
+ 
+.button2 {
+  background-color: Navy; 
+  color: black; 
+  border: 2px solid Navy;
+}
+
+.button2:hover {
+  background-color: GoldenRod;
   color: white;
 }
 
@@ -196,12 +196,16 @@
   
 <article class="browser">
  <h3>Solar Powered Home</h3>
- <button class="button button1" onclick="document.getElementById('myImage').src='https://user-images.githubusercontent.com/122864124/213903691-befdba77-c55d-474a-bb1d-e84c696992dc.jpg'">Day Time</button>
-
-<img id="myImage" src="https://user-images.githubusercontent.com/122864124/213903691-befdba77-c55d-474a-bb1d-e84c696992dc.jpg" style="width: 600px;">
-<p>This is an interactive replica of what a real solar powered home might manifest</p>
- 
- <button class="button button2" onclick="document.getElementById('myImage').src='https://user-images.githubusercontent.com/122864124/213903699-aac48fe1-3b74-4e1a-bfc4-aa9d2b4b754d.jpg'">Night Time</button>
+ <img id="myImage" class="center" src="https://user-images.githubusercontent.com/122864124/213903691-befdba77-c55d-474a-bb1d-e84c696992dc.jpg" style="width: 750px;">
+ <div class="row">
+   <div class="column">
+      <button class="button button1" onclick="document.getElementById('myImage').src='https://user-images.githubusercontent.com/122864124/213903691-befdba77-c55d-474a-bb1d-e84c696992dc.jpg'">Day Time</button>
+    </div>
+       <div class="column">
+     <button class="button button2" onclick="document.getElementById('myImage').src='https://user-images.githubusercontent.com/122864124/213903699-aac48fe1-3b74-4e1a-bfc4-aa9d2b4b754d.jpg'">Night Time</button>
+       </div>
+   </div>
+          <p>This is an interactive replica of what a real solar powered home might manifest</p>
 </article>
    
    <article class="browser">
