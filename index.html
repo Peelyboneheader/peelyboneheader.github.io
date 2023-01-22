@@ -60,28 +60,42 @@
   padding: 3px;
 }
  
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+ 
 .button {
-  background-color: #4CAF50; /* Green */
   border: none;
-  color: RoyalBlue;
-  padding: 16px 32px;
+  padding: 9px 18px;
   text-align: center;
-  text-decoration: none;
+  font-style: TimesNewRoman;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 8px;
   transition-duration: 0.4s;
   cursor: pointer;
 }
  
  .button1 {
-  background-color: LightBlue; 
+  background-color: SteelBlue; 
   color: black; 
-  border: 2px solid Indigo;
+  border: 2px solid SteelBlue;
 }
 
 .button1:hover {
-  background-color: Indigo;
+  background-color: GoldenRod;
+  color: white;
+}
+ 
+.button2 {
+  background-color: SteelBlue; 
+  color: black; 
+  border: 2px solid SteelBlue;
+}
+
+.button1:hover {
+  background-color: black;
   color: white;
 }
 
@@ -111,11 +125,7 @@
  
    </article>  
  
-<div class="row">
-  <div class="column">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Bobcat_Fire%2C_Los_Angeles%2C_San_Gabriel_Mountains.jpg" alt="climate change" width="1065" style="border: 5px solid black;">
- </div>
- </div>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Bobcat_Fire%2C_Los_Angeles%2C_San_Gabriel_Mountains.jpg" alt="climate change" width="1065" style="border: 5px solid black;" class="center">
   <h2 style="padding: 3px;">How the Expenditure of Fossil Fuels is Impacting our World</h2>
   
    <article class="browser">
@@ -190,10 +200,10 @@
  <h3>Solar Powered Home</h3>
  <button class="button button1" onclick="document.getElementById('myImage').src='https://user-images.githubusercontent.com/122864124/213903691-befdba77-c55d-474a-bb1d-e84c696992dc.jpg'">Day Time</button>
 
- <p style="float: left;"><img id="myImage" src="https://user-images.githubusercontent.com/122864124/213903691-befdba77-c55d-474a-bb1d-e84c696992dc.jpg" style="width: 600px;"></p>
- <p>This is an interactive replica of what a real solar powered home might manifest</p>
+<img id="myImage" src="https://user-images.githubusercontent.com/122864124/213903691-befdba77-c55d-474a-bb1d-e84c696992dc.jpg" style="width: 600px;">
+<p>This is an interactive replica of what a real solar powered home might manifest</p>
  
- <button onclick="document.getElementById('myImage').src='https://user-images.githubusercontent.com/122864124/213903699-aac48fe1-3b74-4e1a-bfc4-aa9d2b4b754d.jpg'">Night Time</button>
+ <button class="button button2" onclick="document.getElementById('myImage').src='https://user-images.githubusercontent.com/122864124/213903699-aac48fe1-3b74-4e1a-bfc4-aa9d2b4b754d.jpg'">Night Time</button>
 </article>
    
    <article class="browser">
